@@ -1,0 +1,10 @@
+# Same line endings on Windows, in Docker and in CI.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
+*.xlsx binary
+# Downloaded third-party files stay byte for byte as downloaded, so their
+# checksum (README, "Front end") can still be compared.
+static/vendor/** binary
